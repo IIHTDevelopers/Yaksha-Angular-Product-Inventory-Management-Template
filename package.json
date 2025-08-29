@@ -7,9 +7,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest --no-cache",
-    "test:coverage": "jest --coverage",
-    "test-watch": "jest --watch"
+    "test": "jest --no-cache --maxWorkers=2",
+    "test:coverage": "jest --coverage --maxWorkers=2",
+    "test-watch": "jest --watch --maxWorkers=2"
   },
   "private": true,
   "dependencies": {
